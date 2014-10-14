@@ -12,7 +12,7 @@ describe Airport do
 
 	end
 
-	it 'should contain all the passengrs within each plane'
+	it 'should contain all the passengrs within each plane' do
 
 	end
 

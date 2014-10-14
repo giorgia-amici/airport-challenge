@@ -16,7 +16,7 @@ describe Plane do
 
 	end
 
-	it 'should have numerated seats for each passenger'
+	it 'should have numerated seats for each passenger' do
 
 	end
 #how to call here the class passenger?
