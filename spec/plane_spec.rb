@@ -4,12 +4,12 @@ describe Plane do
 
 	let(:plane){Plane.new}
 
-	it 'should be an array' do
+	it 'should not exceed the default capacity unless changed' do
 
 	end
 
-	it 'should have a limited number of passengers on board' do
-		#expect
+	it 'should be an array' do
+
 	end
 
 	it 'should only have passengers whose destination matches with his' do
@@ -19,7 +19,11 @@ describe Plane do
 	it 'should have numerated seats for each passenger' do
 
 	end
-#how to call here the class passenger?
+
+	it 'should have luggages in the cargo' do
+
+	end
+
 
 
 
