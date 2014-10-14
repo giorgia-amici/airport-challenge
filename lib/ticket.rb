@@ -4,14 +4,14 @@ class Ticket
 	attr_accessor :date, :origin, :destination, :passenger_name, :seat
 
 
-	def initialize 
+	def today
 		@date = Date.today.to_s
 	end
 
-	def today?
-		if @date != Date.today.to_s
+	def departure
+		if !today
 			raise 'Is not your departure day' 
-		end		#mettere la roba difficile che m ha fatto vedere pablo
+		end
 	end
 
 	def from?

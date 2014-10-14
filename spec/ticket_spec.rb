@@ -5,13 +5,14 @@ describe Ticket do
 
 	let(:ticket){Ticket.new}
 
-	it 'should have the date of today' do
-		expect(ticket.today?).to be true
-		
+	it 'should be with the today\'s date' do
+		expect(ticket.today).to eq(Date.today.to_s)
 	end
 
-	# it 'should raise error if date not today' do
-	# 	expect{(ticket.today?).to be false}.to raise_error('RuntimeError is not your departure day')
+	# it 'should have the date of today otherwise raises and error' do
+	# 	#call a method that make my ticket today method false and then you run the error
+	# 	expect{ticket.today?}.to raise_error('Is not your departure day')
+		
 	# end
 
 	it 'should have an origin' do
