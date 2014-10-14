@@ -3,25 +3,16 @@ class Ticket
 	require 'date'
 	attr_accessor :date, :origin, :destination, :passenger_name, :seat
 
-	def inititialize
-		today?
-	end
 
-	def date_today
-		@date = Date.today
-		@date = @date_to.s
+	def initialize 
+		@date = Date.today.to_s
 	end
-
 
 	def today?
-		if @date = true
-			#mettere la roba difficile che m ha fatto vedere pablo
+		if @date != Date.today.to_s
+			raise 'Is not your departure day' 
+		end		#mettere la roba difficile che m ha fatto vedere pablo
 	end
-
-	# def no_fly
-	# 	raise 'RuntimeError is not your departure day' if !today?
-	# end
-
 
 	def from?
 		@origin = 'Rome'
