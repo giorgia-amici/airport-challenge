@@ -8,11 +8,11 @@ class Ticket
 		@date = Date.today.to_s
 	end
 
-	def departure
-		if !today
-			raise 'Is not your departure day' 
-		end
-	end
+	# def departure
+	# 	if !today
+	# 		raise 'Is not your departure day' 
+	# 	end
+	# end
 
 	def from?
 		@origin = 'Rome'
