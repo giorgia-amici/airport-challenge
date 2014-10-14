@@ -19,7 +19,7 @@ describe Ticket do
 	end
 
 	it 'should have an allocated seat numebr' do
-
+		should_not eql(0) #how can I put the range here?
 	end
 
 

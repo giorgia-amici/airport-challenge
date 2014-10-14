@@ -1,7 +1,7 @@
 class Ticket
 
 	require 'date'
-	attr_accessor :date, :origin, :destination, :passenger, :seat
+	attr_accessor :date, :origin, :destination, :passenger_name, :seat
 
 	def inititialize
 		today?
@@ -18,6 +18,10 @@ class Ticket
 	end
 
 
+
+
+####I want to raise an error if the date is not today
+
 	def from?
 		@origin = 'Rome'
 	end
@@ -26,7 +30,11 @@ class Ticket
 		@destination != @origin
 	end
 
-	def seat_number
+	def seat?
+		@seat = rand(1..30)
+	end
+
+	def passenger_name?
 
 	end
 
