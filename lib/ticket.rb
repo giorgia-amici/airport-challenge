@@ -14,13 +14,14 @@ class Ticket
 
 
 	def today?
-		@date = true
+		if @date = true
+			#mettere la roba difficile che m ha fatto vedere pablo
 	end
 
+	# def no_fly
+	# 	raise 'RuntimeError is not your departure day' if !today?
+	# end
 
-
-
-####I want to raise an error if the date is not today
 
 	def from?
 		@origin = 'Rome'
@@ -34,8 +35,8 @@ class Ticket
 		@seat = rand(1..30)
 	end
 
-	def passenger_name?
-
+	def passenger
+		@passenger 
 	end
 
 
