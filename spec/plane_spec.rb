@@ -3,13 +3,14 @@ require 'plane'
 describe Plane do 
 
 	let(:plane){Plane.new}
+	DEFAULT_CAPACITY = 225
 
 	it 'should not exceed the default capacity unless changed' do
-
+		expect(plane.capacity).to eq(DEFAULT_CAPACITY)
 	end
 
 	it 'should be an array' do
-
+		expect(plane.cargo).to eq([])
 	end
 
 	it 'should only have passengers whose destination matches with his' do

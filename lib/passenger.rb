@@ -1,8 +1,8 @@
 class Passenger
 
-	attr_accessor :name, :lagguage, :ticket
+	attr_accessor :name, :luggage, :ticket
 
-	def initialize(name = 'pablo')
+	def initialize(name = 'Passenger')
 		@name = name
 	end
 
