@@ -17,7 +17,7 @@ def number_of_seats
 end
 
 def flatten_array
-	@available_seats = @available_seats.flatten
+	@available_seats.flatten!
 end
 
 
