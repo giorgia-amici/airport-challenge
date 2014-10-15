@@ -1,17 +1,30 @@
 class Seat
-attr_accessor :number, :row, :class
+attr_accessor :number, :row, :first_class, :second_class, :available_seats
 
 
 def initialize
-	@number = [*1..15] #here it goes the method and not the object to select the num of seat
-
-	@row = ['A', 'B', 'C'] #here it goes the method and not the in var to assign a row
+	@number = [*1..15] 
+	@row = ['A', 'B', 'C'] 
+	#@first_class = []
+	#@secon_class = []
+	@available_seats = []
 end
 
-def number
-	@number.sample.to_s
+
+
+# def first_class
+# 	@number.each{|num| puts 'ciao' +  num.to_s + "" + 'first class' if  num == 1}
+# end
+
+
+
+
+def number_of_seats
+	3.times{available_seats << @number}
+	@available_seats.flatten
 	#IF SELECTED MORE THAN THREE TIMES NOT AVAILABLE ANYMORE
 end
+
 
 
 def row
@@ -20,16 +33,12 @@ end
 
 
 
-
-# def class
-	#from 1-3 all rows is first class the rest is economic
-# end
-
-
-
 def assign_seat
-	number + " " + row
+	@available_seats.collect{|x| x + row}
 end
+
+
+	#IF SELECTED MORE THAN THREE TIMES NOT AVAILABLE ANYMORE
 
 
 
