@@ -26,7 +26,7 @@ end
 
 
 def assign_seat
-	@available_seats.collect{|x| x + row}
+	@available_seats.collect{|x| x.to_s + row}
 end
 
 

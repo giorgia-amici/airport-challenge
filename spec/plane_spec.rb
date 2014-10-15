@@ -10,7 +10,7 @@ describe Plane do
 	end
 
 	it 'should be an array' do
-		expect(plane.cargo).to eq([])
+		expect(plane.cargo).to be_an_instance_of(Array)
 	end
 
 	it 'should only have passengers whose destination matches with his' do

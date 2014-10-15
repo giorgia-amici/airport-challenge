@@ -6,7 +6,7 @@ class Plane
 
 	def initialize
 		@capacity = DEFAULT_CAPACITY
-		@seats = [*1..225]
+	#	@seats = [*1..225]
 		@cargo = []
 		@passengers = []
 	end
