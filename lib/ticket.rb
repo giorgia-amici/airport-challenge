@@ -1,4 +1,4 @@
-class Ticket
+	class Ticket
 
 	require 'date'
 	attr_accessor :date, :origin, :destination, :passenger_name, :seat

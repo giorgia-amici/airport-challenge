@@ -18,4 +18,3 @@ class Plane
 
 
 end
-

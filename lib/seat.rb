@@ -7,7 +7,23 @@ def initialize
 	@row = ['A', 'B', 'C'] #here it goes the method and not the in var to assign a row
 end
 
+def assign_number
+
+end
 
 
+def assign_row
+
+
+end
+
+def assign_class
+
+end
+
+def assign_seat
+
+
+end
 
 end
