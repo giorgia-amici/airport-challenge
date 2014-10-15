@@ -10,10 +10,10 @@ describe Seat do
 		expect(seat.number_of_seats).to be 3
 	end
 
-#to contain_exactly(2, 3, 1)
+
 	it 'randomly selects one of the letters in row' do
 		expect(seat.row).to eq("A").or eq("B").or eq("C")
-		#to be_an_instance_of(String)
+		
 	end
 
 

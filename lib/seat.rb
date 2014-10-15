@@ -7,7 +7,7 @@ def initialize
 	@row = ['A', 'B', 'C'] 
 	#@first_class = []
 	#@secon_class = []
-	@available_seats = []
+	@available_seats = [] 
 end
 
 
@@ -16,13 +16,14 @@ def number_of_seats
 	3.times{available_seats << @number}
 end
 
+def flatten_array
+	@available_seats = @available_seats.flatten
+end
 
 
 def row
 	@row.sample
 end
-
-#remeber to flatten the available_seats or the assign_seat methods won't iterate through the 3 arrays
 
 
 def assign_seat
