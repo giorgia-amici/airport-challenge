@@ -12,17 +12,8 @@ end
 
 
 
-# def first_class
-# 	@number.each{|num| puts 'ciao' +  num.to_s + "" + 'first class' if  num == 1}
-# end
-
-
-
-
 def number_of_seats
 	3.times{available_seats << @number}
-	@available_seats.flatten
-	#IF SELECTED MORE THAN THREE TIMES NOT AVAILABLE ANYMORE
 end
 
 
@@ -31,6 +22,7 @@ def row
 	@row.sample
 end
 
+#remeber to flatten the available_seats or the assign_seat methods won't iterate through the 3 arrays
 
 
 def assign_seat
