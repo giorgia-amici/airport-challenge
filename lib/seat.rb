@@ -1,5 +1,5 @@
 class Seat
-attr_accessor :first_class, :second_class
+attr_accessor :first_class, :second_class, :all_seats
 
 
 def initialize
