@@ -16,8 +16,13 @@ describe Plane do
 	end
 
 	it 'should match its destination with the passengers' do
-		#expect(plane.destination).to eq(passenger.destination) 
+		expect(plane.check_destination(passenger)).to be true
 	end
+
+	it 'should accept the passenger on board if destination matches' do
+
+	end
+
 
 	it 'should have numerated seats for each passenger' do
 

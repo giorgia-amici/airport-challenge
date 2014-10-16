@@ -17,3 +17,6 @@ require './seat'
 @boeing_747.destination = 'Rome'
 @giorgia.ticket.destination = 'Rome'
 @pablo.ticket.destination = 'Santiago'
+@maleta_de_gio.passenger = @giorgia
+@maleta_de_pablo.passenger = @pablo
+@nobody_luggage = Luggage.new
