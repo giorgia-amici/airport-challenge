@@ -9,7 +9,4 @@ describe Luggage do
 	end
 
 
-
-
-
 end
