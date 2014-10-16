@@ -12,7 +12,6 @@ def initialize
 	flatten
 	all_seats
 	first_second_class
-
 end
 
 
