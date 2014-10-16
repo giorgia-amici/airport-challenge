@@ -7,21 +7,16 @@ describe Seat do
 	@row = ['A', 'B', 'C']
 
 	it 'creates a limited amount of seats' do
-		expect(seat.number_of_seats).to be 3
+		expect(seat.seat_no).to be 3
 	end
 
+	# it 'flatten the array' do
+	# 	expect(seat.flatten).to be([])
+	# end
 
-	it 'randomly selects one of the letters in row' do
-		expect(seat.row).to eq("A").or eq("B").or eq("C")
-	end
-
-
-	it 'flatten the array' do
-		
-	end
-
-	it 'assigns a seat with number and row' do
-		#expect
+	it 'gives you all the seats' do
+		expect(seat.all_seats).to be_an_instance_of(Array)
+		#to start_with(["1A"]).and end_with(["15 C"])
 	end
 
 

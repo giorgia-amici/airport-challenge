@@ -1,34 +1,35 @@
 class Seat
-attr_accessor :first_class, :second_class, :available_seats
+attr_accessor :first_class, :second_class
 
 
 def initialize
-	@number = [*1..15] 
 	@row = ['A', 'B', 'C'] 
-	#@first_class = []
-	#@secon_class = []
-	@available_seats = [] 
+	@first_class = []
+	@second_class = []
+	@seats_no = [] 
 	@all_seats = []
 end
 
 
-def number_of_seats
-	3.times{@available_seats << @number}
+def seat_no
+	3.times{@seats_no << [*1..15]}
 end
 
 def flatten
-	@available_seats.flatten!
+	@seats_no.flatten!
 end
 
 def all_seats
-	@available_seats.each do |x| 
-		@row.each do |r|
-			@all_seats << x.to_s + r
-		end
+	@seats_no.each do |x| 
+		@row.each{|r| @all_seats << x.to_s + r}
 	end
 	@all_seats
 end
 
+def class
+	@first_class = @all_seats[0..8]
+	@second_class = @all_seats[9..45]
+end
 
 end
 
