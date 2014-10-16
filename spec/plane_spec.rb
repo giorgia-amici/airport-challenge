@@ -1,9 +1,11 @@
 require 'plane'
-
+require 'passenger'
 describe Plane do 
 
 	let(:plane){Plane.new}
-	DEFAULT_CAPACITY = 225
+	let(:passenger){Passenger.new}
+
+	DEFAULT_CAPACITY = 45
 
 	it 'should not exceed the default capacity unless changed' do
 		expect(plane.capacity).to eq(DEFAULT_CAPACITY)
@@ -13,8 +15,8 @@ describe Plane do
 		expect(plane.cargo).to be_an_instance_of(Array)
 	end
 
-	it 'should only have passengers whose destination matches with his' do
-
+	it 'should match its destination with the passengers' do
+		#expect(plane.destination).to eq(passenger.destination) 
 	end
 
 	it 'should have numerated seats for each passenger' do
