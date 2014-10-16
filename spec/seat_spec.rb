@@ -13,10 +13,16 @@ describe Seat do
 
 	it 'randomly selects one of the letters in row' do
 		expect(seat.row).to eq("A").or eq("B").or eq("C")
-		
 	end
 
 
+	it 'flatten the array' do
+		
+	end
+
+	it 'assigns a seat with number and row' do
+		#expect
+	end
 
 
 

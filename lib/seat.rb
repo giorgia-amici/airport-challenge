@@ -13,7 +13,7 @@ end
 
 
 def number_of_seats
-	3.times{available_seats << @number}
+	3.times{@available_seats << @number}
 end
 
 def flatten_array
@@ -31,8 +31,14 @@ def assign_seat
 end
 
 
-	#IF SELECTED MORE THAN THREE TIMES NOT AVAILABLE ANYMORE
+	#seat.assign_seat.uniq!
+	#use the uniq! method => then u need to replace the seats that have been dropped
 
 
-
+end
+all seats = []
+@available_seats.each do |x| 
+	@row.each do |r|
+		all_seats << x.to_s + r
+	end
 end
