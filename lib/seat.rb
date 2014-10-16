@@ -8,6 +8,11 @@ def initialize
 	@second_class = []
 	@seats_no = [] 
 	@all_seats = []
+	seat_no
+	flatten
+	all_seats
+	first_second_class
+
 end
 
 
@@ -26,7 +31,7 @@ def all_seats
 	@all_seats
 end
 
-def class
+def first_second_class
 	@first_class = @all_seats[0..8]
 	@second_class = @all_seats[9..45]
 end

@@ -2,7 +2,7 @@ class Plane
 
 	attr_accessor :capacity, :seats, :cargo, :passengers, :origin, :destination
 	
-	DEFAULT_CAPACITY = 225
+	DEFAULT_CAPACITY = 45
 
 	def initialize
 		@capacity = DEFAULT_CAPACITY
@@ -12,7 +12,7 @@ class Plane
 	end
 
 
-	def capacity_noDef(new_value)
+	def change_capacity(new_value)
 		@capacity = new_value
 	end
 
