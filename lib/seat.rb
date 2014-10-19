@@ -16,7 +16,7 @@ end
 
 
 def seat_no
-	3.times{@seats_no << [*1..15]}
+	3.times{@seats << [*1..15]}
 end
 
 def flatten

@@ -1,6 +1,6 @@
 class Plane
 
-	attr_accessor :capacity, :seats, :cargo, :passengers, :origin, :destination
+	attr_accessor :capacity, :seats, :cargo, :passengers, :origin, :destination, :all_seats
 	
 	DEFAULT_CAPACITY = 45
 
@@ -8,8 +8,21 @@ class Plane
 		@capacity = DEFAULT_CAPACITY
 		@cargo = []
 		@passengers = []
+		@seats_no = [*1..15]
+		@row = ['A', 'B', 'C'] 
+		@seats = []
+		
+
+
+
+		#I NEED TO PUT THE LIST OF ALL AVAILABLE SEATS ALSO HERE. THEN THE SEAT HERE NEEDS TO MATCH THE ONE ON THE TICKET
 	end
 
+	def all_seats
+		@seats_no.each do |x| 
+			@row.each{|r| @seats << x.to_s + r}
+		end
+	end
 
 	def change_capacity(new_value)
 		@capacity = new_value
@@ -51,6 +64,7 @@ class Plane
 
 	
 =end
+
 	
 
 

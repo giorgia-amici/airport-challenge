@@ -2,7 +2,7 @@ require './luggage'
 require './passenger'
 require './ticket'
 require './plane'
-require './seat'
+#require './seat'
 
 @giorgia = Passenger.new
 @pablo = Passenger.new
@@ -12,7 +12,7 @@ require './seat'
 @giorgia.ticket = @ticket_gio
 @ticket_pablo = Ticket.new
 @pablo.ticket = @ticket_pablo
-@seat = Seat.new
+#@seat = Seat.new
 @boeing_747 = Plane.new
 @boeing_747.destination = 'Rome'
 @giorgia.ticket.destination = 'Rome'
