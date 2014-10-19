@@ -11,12 +11,11 @@ class Plane
 		@seats_no = [*1..15]
 		@row = ['A', 'B', 'C'] 
 		@seats = []
-		
+		self.all_seats
 
-
-
-		#I NEED TO PUT THE LIST OF ALL AVAILABLE SEATS ALSO HERE. THEN THE SEAT HERE NEEDS TO MATCH THE ONE ON THE TICKET
 	end
+
+
 
 	def all_seats
 		@seats_no.each do |x| 
@@ -32,12 +31,12 @@ class Plane
 		passenger.ticket.destination == self.destination
 	end
 
-	def allowed_capacity?
-		@capacity > @passengers.size
+	def full?
+		@capacity < @passengers.size
 	end
 
 	def on_board(passenger)
-		@passengers << passenger if check_destination(passenger) && allowed_capacity?
+		@passengers << passenger if check_destination(passenger) && full?
 	end
 
 	def luggage_owner_on_plane(luggage)
@@ -49,23 +48,6 @@ class Plane
 		@cargo << luggage if luggage_owner_on_plane(luggage)
 	end
 
-
-
-
-=begin
-1. the passenger destination needs to match the plane destination before being pushed into the plane
-2. passengers sould not be more than 45
-3. the luggages need to belong to a passenger that is in the plane before being pushed into the cargo
-
-
-
-3. the seat on the passenger's ticket should be the same assigned to the passenger on the plane
-
-
-	
-=end
-
-	
 
 
 end
