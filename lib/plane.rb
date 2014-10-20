@@ -16,7 +16,6 @@ class Plane
 	end
 
 
-
 	def all_seats
 		@seats_no.each do |x| 
 			@row.each{|r| @seats << x.to_s + r}
@@ -31,18 +30,17 @@ class Plane
 		passenger.ticket.destination == self.destination
 	end
 
-	def full?
-		@capacity < @passengers.size
+	def on_board(passenger)
+		@passengers << passenger if check_destination(passenger)
 	end
 
-	def on_board(passenger)
-		@passengers << passenger if check_destination(passenger) && full?
+	def full?
+		@capacity < @passengers.size
 	end
 
 	def luggage_owner_on_plane(luggage)
 		@passengers.include?(luggage.passenger)
 	end
-
 
 	def load_lagguage_in_cargo(luggage)
 		@cargo << luggage if luggage_owner_on_plane(luggage)
