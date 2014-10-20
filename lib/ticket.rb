@@ -11,8 +11,5 @@ class Ticket
 		@destination != @origin
 	end
 
-	def assign_seat(seat)
-		@assigned_seat = seat.all_seats.sample
-	end
 
 end

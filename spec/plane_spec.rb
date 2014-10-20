@@ -11,26 +11,27 @@ describe Plane do
 		expect(plane.capacity).to eq(DEFAULT_CAPACITY)
 	end
 
-	it 'should be an array' do
-		expect(plane.cargo).to be_an_instance_of(Array)
+
+	it 'should have seats with rows and numbers' do
+		expect(plane).to have_seats 
 	end
 
-	it 'should match its destination with the passengers' do
-		expect(plane.check_destination(passenger)).to be true
-	end
+	# it 'should match its destination with the passengers' do
+	# 	expect(plane.check_destination(passenger)).to be true
+	# end
 
-	it 'should accept the passenger on board if destination matches' do
+	# it 'should accept the passenger on board if destination matches' do
 
-	end
+	# end
 
 
-	it 'should have numerated seats for each passenger' do
+	# it 'should have numerated seats for each passenger' do
 
-	end
+	# end
 
-	it 'should have luggages in the cargo' do
+	# it 'should have luggages in the cargo' do
 
-	end
+	# end
 
 
 
