@@ -1,6 +1,6 @@
 class Airport
 
-attr_accessor :planes, :passengers
+attr_accessor :planes, :passengers, :name
 
 
 def initialize(name = 'Airport')
@@ -9,11 +9,22 @@ def initialize(name = 'Airport')
 	@passengers = []
 end
 
-def add_passenger(passenger)
+def has_planes?
+	@planes 
+end
+
+def has_passengers?
+	@passengers
 end
 
 def add_plane(plane)
 end
+
+
+def add_passenger(passenger)
+end
+
+
 
 
 

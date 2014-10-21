@@ -4,25 +4,13 @@ describe Airport do
 
 	let(:airport){Airport.new}
 
-	it 'should be a hash' do
-
-	end
-
 	it 'should contain all the planes' do
+		expect(airport).to have_planes	
+	end
+
+	it 'should have passengers' do
+		expect(airport).to have_passengers
 
 	end
 
-	it 'should contain all the passengers within each plane' do
-
-	end
-
-
-
-
-
-
-
-
-
-	
 end
